@@ -1,0 +1,394 @@
+{
+ "A_LR_SMOTE_khong_nhan": {
+  "n": 5000,
+  "xac_suat_TB": 0.3745576941267215,
+  "so_gia_tri_khac_nhau": 3983,
+  "ty_le_tham_chieu": 0.02,
+  "he_so_thoi_phong": 18.727884706336077,
+  "tai_chuyen": {
+   "0.02": 1.0,
+   "0.05": 0.9974,
+   "0.1": 0.9332
+  },
+  "nang_luc": {
+   "K_tre": 250,
+   "diem_cat": 0.8053163627308206,
+   "tre_tren_diem_cat": 249,
+   "tre_trung_diem_o_ranh_gioi": 1,
+   "phai_boc_tham": false
+  },
+  "dai_nguy_co_nguyen_trang": [
+   {
+    "dai": "dưới 1 %",
+    "ty_trong": 0.0,
+    "tren_1000_tre": 0,
+    "nguy_co_TB_hien_thi": null
+   },
+   {
+    "dai": "1–5 %",
+    "ty_trong": 0.0026,
+    "tren_1000_tre": 3,
+    "nguy_co_TB_hien_thi": 0.044123372860386256
+   },
+   {
+    "dai": "5–20 %",
+    "ty_trong": 0.2506,
+    "tren_1000_tre": 251,
+    "nguy_co_TB_hien_thi": 0.13372412390344224
+   },
+   {
+    "dai": "từ 20 % trở lên",
+    "ty_trong": 0.7468,
+    "tren_1000_tre": 747,
+    "nguy_co_TB_hien_thi": 0.45652344390343047
+   }
+  ],
+  "sua_thang": {
+   "cach": "khớp trung bình (dịch log-odds, không cần nhãn)",
+   "delta_log_odds": -3.9444674894661507,
+   "ti_so_odds": 0.019361523840412048,
+   "xac_suat_TB_sau": 0.019999999999999997,
+   "tai_chuyen_sau": {
+    "0.02": 0.256,
+    "0.05": 0.082,
+    "0.1": 0.0302
+   },
+   "dai_nguy_co_sau": [
+    {
+     "dai": "dưới 1 %",
+     "ty_trong": 0.515,
+     "tren_1000_tre": 515,
+     "nguy_co_TB_hien_thi": 0.005079483572193121
+    },
+    {
+     "dai": "1–5 %",
+     "ty_trong": 0.403,
+     "tren_1000_tre": 403,
+     "nguy_co_TB_hien_thi": 0.02140710329309843
+    },
+    {
+     "dai": "5–20 %",
+     "ty_trong": 0.0748,
+     "tren_1000_tre": 75,
+     "nguy_co_TB_hien_thi": 0.09007107364045044
+    },
+    {
+     "dai": "từ 20 % trở lên",
+     "ty_trong": 0.0072,
+     "tren_1000_tre": 7,
+     "nguy_co_TB_hien_thi": 0.280512086791136
+    }
+   ]
+  },
+  "canh_bao": [
+   "Xác suất trung bình gấp 18.7 lần tỷ lệ tham chiếu: KHÔNG đọc con số này cho gia đình như một xác suất; hỏi nhà cung cấp về tái lấy mẫu / trọng số lớp.",
+   "Quy tắc ngưỡng 2 %, 5 %, 10 % chuyển nhiều hơn năng lực 5 %: danh sách chờ sẽ vượt tải."
+  ]
+ },
+ "B_RF_SMOTE_co_1000_nhan": {
+  "n": 1000,
+  "xac_suat_TB": 0.09314396372739184,
+  "so_gia_tri_khac_nhau": 864,
+  "nhan": {
+   "so_ca_duong": 24,
+   "ty_le_quan_sat": 0.024,
+   "wilson95": [
+    0.016180168416800114,
+    0.035462905718700644
+   ],
+   "ty_le_du_kien_trong_KTC": true
+  },
+  "ty_le_tham_chieu": 0.02,
+  "he_so_thoi_phong": 4.657198186369592,
+  "tai_chuyen": {
+   "0.02": 0.575,
+   "0.05": 0.395,
+   "0.1": 0.253
+  },
+  "nang_luc": {
+   "K_tre": 50,
+   "diem_cat": 0.43444281917008704,
+   "tre_tren_diem_cat": 49,
+   "tre_trung_diem_o_ranh_gioi": 1,
+   "phai_boc_tham": false
+  },
+  "dai_nguy_co_nguyen_trang": [
+   {
+    "dai": "dưới 1 %",
+    "ty_trong": 0.28,
+    "tren_1000_tre": 280,
+    "nguy_co_TB_hien_thi": 0.003717915132936114,
+    "ty_le_quan_sat": 0.007142857142857143,
+    "wilson95": [
+     0.0019610195757796354,
+     0.025665173272162778
+    ]
+   },
+   {
+    "dai": "1–5 %",
+    "ty_trong": 0.325,
+    "tren_1000_tre": 325,
+    "nguy_co_TB_hien_thi": 0.024264571457097185,
+    "ty_le_quan_sat": 0.021538461538461538,
+    "wilson95": [
+     0.010471556636356544,
+     0.04378394673597324
+    ]
+   },
+   {
+    "dai": "5–20 %",
+    "ty_trong": 0.253,
+    "tren_1000_tre": 253,
+    "nguy_co_TB_hien_thi": 0.10235877313382279,
+    "ty_le_quan_sat": 0.02766798418972332,
+    "wilson95": [
+     0.013465695756973359,
+     0.055999175525905304
+    ]
+   },
+   {
+    "dai": "từ 20 % trở lên",
+    "ty_trong": 0.142,
+    "tren_1000_tre": 142,
+    "nguy_co_TB_hien_thi": 0.4107055786179999,
+    "ty_le_quan_sat": 0.056338028169014086,
+    "wilson95": [
+     0.028820716021608878,
+     0.10722742168555338
+    ]
+   }
+  ],
+  "sua_thang": {
+   "cach": "khớp trung bình (dịch log-odds, không cần nhãn)",
+   "delta_log_odds": -2.0512816253225763,
+   "ti_so_odds": 0.12857001935793821,
+   "xac_suat_TB_sau": 0.019999999999999997,
+   "tai_chuyen_sau": {
+    "0.02": 0.197,
+    "0.05": 0.093,
+    "0.1": 0.043
+   },
+   "dai_nguy_co_sau": [
+    {
+     "dai": "dưới 1 %",
+     "ty_trong": 0.683,
+     "tren_1000_tre": 683,
+     "nguy_co_TB_hien_thi": 0.0026792958095615527,
+     "ty_le_quan_sat": 0.017569546120058566,
+     "wilson95": [
+      0.010078580702570809,
+      0.030456914820141547
+     ]
+    },
+    {
+     "dai": "1–5 %",
+     "ty_trong": 0.224,
+     "tren_1000_tre": 224,
+     "nguy_co_TB_hien_thi": 0.02239967973462723,
+     "ty_le_quan_sat": 0.03125,
+     "wilson95": [
+      0.015218359232159723,
+      0.06308810425739901
+     ]
+    },
+    {
+     "dai": "5–20 %",
+     "ty_trong": 0.075,
+     "tren_1000_tre": 75,
+     "nguy_co_TB_hien_thi": 0.0943460683960391,
+     "ty_le_quan_sat": 0.06666666666666667,
+     "wilson95": [
+      0.028810062717139144,
+      0.14675060140166862
+     ]
+    },
+    {
+     "dai": "từ 20 % trở lên",
+     "ty_trong": 0.018,
+     "tren_1000_tre": 18,
+     "nguy_co_TB_hien_thi": 0.33758653176722364,
+     "ty_le_quan_sat": 0.0,
+     "wilson95": [
+      0.0,
+      0.17587922593328437
+     ]
+    }
+   ],
+   "he_so_goc_hieu_chinh": 0.2863581635150659
+  },
+  "loi_ich_rong_x1000": {
+   "0.02": {
+    "truoc": 7.653061224489795,
+    "sau": 6.183673469387754,
+    "chuyen_tat_ca": 4.081632653061225
+   },
+   "0.05": {
+    "truoc": -5.0,
+    "sau": 0.36842105263157876,
+    "chuyen_tat_ca": -27.368421052631582
+   },
+   "0.1": {
+    "truoc": -14.777777777777779,
+    "sau": -3.666666666666667,
+    "chuyen_tat_ca": -84.44444444444446
+   }
+  },
+  "canh_bao": [
+   "Xác suất trung bình gấp 4.7 lần tỷ lệ tham chiếu: KHÔNG đọc con số này cho gia đình như một xác suất; hỏi nhà cung cấp về tái lấy mẫu / trọng số lớp.",
+   "Quy tắc ngưỡng 2 %, 5 %, 10 % chuyển nhiều hơn năng lực 5 %: danh sách chờ sẽ vượt tải.",
+   "Hệ số góc hiệu chỉnh 0.29 ngoài [0.7; 1.4]: biến dạng HÌNH DẠNG — dịch log-odds không sửa được; cần mô hình không tái lấy mẫu hoặc hiệu chỉnh lại trên đủ nhãn."
+  ]
+ },
+ "C_LR_nguyen_trang_co_1000_nhan": {
+  "n": 1000,
+  "xac_suat_TB": 0.019123965404521073,
+  "so_gia_tri_khac_nhau": 886,
+  "nhan": {
+   "so_ca_duong": 24,
+   "ty_le_quan_sat": 0.024,
+   "wilson95": [
+    0.016180168416800114,
+    0.035462905718700644
+   ],
+   "ty_le_du_kien_trong_KTC": true
+  },
+  "ty_le_tham_chieu": 0.02,
+  "he_so_thoi_phong": 0.9561982702260536,
+  "tai_chuyen": {
+   "0.02": 0.296,
+   "0.05": 0.074,
+   "0.1": 0.013
+  },
+  "nang_luc": {
+   "K_tre": 50,
+   "diem_cat": 0.057510539977492996,
+   "tre_tren_diem_cat": 49,
+   "tre_trung_diem_o_ranh_gioi": 1,
+   "phai_boc_tham": false
+  },
+  "dai_nguy_co_nguyen_trang": [
+   {
+    "dai": "dưới 1 %",
+    "ty_trong": 0.419,
+    "tren_1000_tre": 419,
+    "nguy_co_TB_hien_thi": 0.0061924039264087205,
+    "ty_le_quan_sat": 0.00954653937947494,
+    "wilson95": [
+     0.003718548748359928,
+     0.024285940008784975
+    ]
+   },
+   {
+    "dai": "1–5 %",
+    "ty_trong": 0.507,
+    "tren_1000_tre": 507,
+    "nguy_co_TB_hien_thi": 0.02113514453091407,
+    "ty_le_quan_sat": 0.029585798816568046,
+    "wilson95": [
+     0.01800992840374769,
+     0.048236571939834876
+    ]
+   },
+   {
+    "dai": "5–20 %",
+    "ty_trong": 0.073,
+    "tren_1000_tre": 73,
+    "nguy_co_TB_hien_thi": 0.07626155695121141,
+    "ty_le_quan_sat": 0.0684931506849315,
+    "wilson95": [
+     0.029609038464428368,
+     0.15052105123985696
+    ]
+   },
+   {
+    "dai": "từ 20 % trở lên",
+    "ty_trong": 0.001,
+    "tren_1000_tre": 1,
+    "nguy_co_TB_hien_thi": 0.246736224743955,
+    "ty_le_quan_sat": 0.0,
+    "wilson95": [
+     0.0,
+     0.7934506882081973
+    ]
+   }
+  ],
+  "sua_thang": {
+   "cach": "khớp trung bình (dịch log-odds, không cần nhãn)",
+   "delta_log_odds": 0.046898325828883314,
+   "ti_so_odds": 1.0480154475605221,
+   "xac_suat_TB_sau": 0.020000000000000007,
+   "tai_chuyen_sau": {
+    "0.02": 0.309,
+    "0.05": 0.082,
+    "0.1": 0.014
+   },
+   "dai_nguy_co_sau": [
+    {
+     "dai": "dưới 1 %",
+     "ty_trong": 0.4,
+     "tren_1000_tre": 400,
+     "nguy_co_TB_hien_thi": 0.006310992906428927,
+     "ty_le_quan_sat": 0.0075,
+     "wilson95": [
+      0.00255388917540412,
+      0.021815720890284482
+     ]
+    },
+    {
+     "dai": "1–5 %",
+     "ty_trong": 0.518,
+     "tren_1000_tre": 518,
+     "nguy_co_TB_hien_thi": 0.021236589028574837,
+     "ty_le_quan_sat": 0.03088803088803089,
+     "wilson95": [
+      0.019100604281837914,
+      0.049582054543567726
+     ]
+    },
+    {
+     "dai": "5–20 %",
+     "ty_trong": 0.081,
+     "tren_1000_tre": 81,
+     "nguy_co_TB_hien_thi": 0.07678387596541834,
+     "ty_le_quan_sat": 0.06172839506172839,
+     "wilson95": [
+      0.026652511928325844,
+      0.13649247713488627
+     ]
+    },
+    {
+     "dai": "từ 20 % trở lên",
+     "ty_trong": 0.001,
+     "tren_1000_tre": 1,
+     "nguy_co_TB_hien_thi": 0.2555557674277818,
+     "ty_le_quan_sat": 0.0,
+     "wilson95": [
+      0.0,
+      0.7934506882081973
+     ]
+    }
+   ],
+   "he_so_goc_hieu_chinh": 0.7991981485372455
+  },
+  "loi_ich_rong_x1000": {
+   "0.02": {
+    "truoc": 10.285714285714285,
+    "sau": 11.040816326530612,
+    "chuyen_tat_ca": 4.081632653061225
+   },
+   "0.05": {
+    "truoc": 1.3684210526315788,
+    "sau": 0.947368421052631,
+    "chuyen_tat_ca": -27.368421052631582
+   },
+   "0.1": {
+    "truoc": -1.4444444444444444,
+    "sau": -1.5555555555555556,
+    "chuyen_tat_ca": -84.44444444444446
+   }
+  },
+  "canh_bao": [
+   "Quy tắc ngưỡng 2 %, 5 % chuyển nhiều hơn năng lực 5 %: danh sách chờ sẽ vượt tải."
+  ]
+ }
+}

@@ -1,0 +1,113 @@
+{
+ "run_started": "2026-09-27T09:21:44",
+ "runtime_s": 5228.952846288681,
+ "quick": false,
+ "command": "python src/run_p11_tasks.py",
+ "seeds": {
+  "pool_generator_pos": 20260829,
+  "pool_generator_neg": 20260830,
+  "test_draw": "SEED + 100 + int(prev*10000)",
+  "train_calib_draw": "SEED_RUN + 1000*rep + int(prev*10000)",
+  "model_seed (RF, FCM)": "SEED_RUN + 31*rep + 7*model_index",
+  "SEED": 20260829,
+  "SEED_RUN": 20260927
+ },
+ "design": {
+  "methods": [
+   "N0",
+   "RUS",
+   "ROS",
+   "SMOTE",
+   "CW",
+   "TS",
+   "SMOTE_RC"
+  ],
+  "prior_corrected": [
+   "RUS",
+   "ROS",
+   "SMOTE",
+   "CW"
+  ],
+  "models": [
+   "LR",
+   "RF",
+   "FKNN",
+   "HYB"
+  ],
+  "prevalences": [
+   0.01,
+   0.02,
+   0.03,
+   0.05
+  ],
+  "n_reps": 20,
+  "n_train": 5000,
+  "n_calib": 2000,
+  "n_test": 50000,
+  "calib_sizes_E2": [
+   250,
+   500,
+   1000,
+   2000,
+   4000,
+   8000
+  ],
+  "pt_main": 0.02,
+  "pt_grid": [
+   0.002,
+   0.1,
+   59
+  ],
+  "n_configurations": 176,
+  "n_tests_main": 256,
+  "n_tests_prior_correction": 128,
+  "multiplicity": "Benjamini–Hochberg, FDR 0.05, separately within each family",
+  "rf": {
+   "n_estimators": 200,
+   "min_samples_leaf": 5
+  },
+  "lr": {
+   "C": 1.0,
+   "max_iter": 2000
+  },
+  "smote_k": 5
+ },
+ "config": {
+  "SHAPLEY": {
+   "GTNN": 0.263,
+   "VDTHO": 0.087,
+   "VDTINH": 0.11,
+   "BCHOC": 0.197,
+   "CNXH": 0.263,
+   "DHBT": 0.08
+  },
+  "FKNN_K": 3,
+  "FKNN_M": 2.0,
+  "FCM_C": 4,
+  "FCM_M": 2.0,
+  "FCM_MAX_ITER": 300,
+  "FCM_TOL": 1e-05,
+  "FCM_MIN_LABELED_PER_CLUSTER": 3,
+  "FUSION_WEIGHTS": {
+   "rule": 0.5,
+   "fknn": 0.3,
+   "fcm": 0.2
+  }
+ },
+ "versions": {
+  "python": "3.12.10",
+  "numpy": "2.5.2",
+  "scipy": "1.18.1",
+  "sklearn": "1.9.0",
+  "platform": "Windows-11-10.0.26200-SP0"
+ },
+ "sha256": {
+  "src/run_p11_tasks.py": "f9ae5148b7cd16ab3780a3132739b422aac9cbe99011750a76ed95f7122d2124",
+  "src/run_imbalance.py": "439943790cac299699860d957d65ed5e38629878473294e2331280afc5b9e29c",
+  "src/ts_simulate.py": "7db0767b0e82aefb2186ca5cb1e26d2d592dfb596c8525569270938647e8bc83",
+  "src/ts_features.py": "5479e231f20c86a60d27970fe54a68bf584e4799d24cb220bcd607c60f30f961",
+  "src/ts_fuzzy.py": "27f5c5c86caa58d16d009ea930930f84ab3e55ce1100f03278202057125b0e0d",
+  "src/config.py": "2566181b61daec1d3958b0edf6759f813d5f32a4ba5d14ef85032bae9caf98f6",
+  "src/data/questions.csv": "864e8198c2cc4c8dc1191d832932a68012f5ece441fa64feb0e48b20bb56ca58"
+ }
+}

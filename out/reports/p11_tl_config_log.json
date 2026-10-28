@@ -1,0 +1,67 @@
+{
+ "run_started": "2026-09-27T21:06:48",
+ "command": "python src/run_p11_tl.py",
+ "quick": false,
+ "seeds": {
+  "SEED_TL": 20261100,
+  "eval_split": "default_rng(SEED_TL)",
+  "rep": "default_rng(SEED_TL + 1000*(rep+1))",
+  "model": "SEED_TL + 31*rep + 7*model_index",
+  "pool": "run_imbalance.SEED (20260829) / +1"
+ },
+ "design": {
+  "prev": 0.02,
+  "n_eval": 50000,
+  "n_train": 5000,
+  "n_reps": 20,
+  "models": [
+   "LR",
+   "RF"
+  ],
+  "methods": [
+   "N0",
+   "RUS",
+   "ROS",
+   "SMOTE",
+   "CW"
+  ],
+  "caps": [
+   0.02,
+   0.05,
+   0.1
+  ],
+  "pts": [
+   0.02,
+   0.05,
+   0.1
+  ],
+  "assumed": [
+   0.01,
+   0.02,
+   0.04
+  ],
+  "n_audit": [
+   100,
+   200,
+   500
+  ]
+ },
+ "n_tests_bh": 108,
+ "pool_sha256": "ab3c60d495f1ec629c571628581c6eca9e9473b13fbd1c2f494734525c870a63",
+ "versions": {
+  "python": "3.12.10",
+  "numpy": "2.5.2",
+  "scipy": "1.18.1",
+  "sklearn": "1.9.0",
+  "platform": "Windows-11-10.0.26200-SP0"
+ },
+ "sha256": {
+  "src/run_p11_tl.py": "f7d5e62a674896777c2253d55166659329a701dea8999bb568fccb3897bbc585",
+  "src/run_imbalance.py": "439943790cac299699860d957d65ed5e38629878473294e2331280afc5b9e29c",
+  "src/ts_simulate.py": "7db0767b0e82aefb2186ca5cb1e26d2d592dfb596c8525569270938647e8bc83",
+  "src/ts_features.py": "5479e231f20c86a60d27970fe54a68bf584e4799d24cb220bcd607c60f30f961",
+  "src/ts_fuzzy.py": "27f5c5c86caa58d16d009ea930930f84ab3e55ce1100f03278202057125b0e0d",
+  "src/config.py": "2566181b61daec1d3958b0edf6759f813d5f32a4ba5d14ef85032bae9caf98f6",
+  "src/data/questions.csv": "864e8198c2cc4c8dc1191d832932a68012f5ece441fa64feb0e48b20bb56ca58"
+ }
+}

@@ -1,0 +1,9 @@
+P11 — kiểm tính tất định (27/09/2026): hai lần chạy nhanh độc lập
+    P11_REPS=2 P11_NTEST=5000 python src/run_p11_tasks.py --quick
+- Mọi giá trị trong "cells" (bảng chính) trùng nhau tới sai số làm tròn dấu phẩy động (chênh ≤ 1e-16);
+  chỉ các ô của rừng ngẫu nhiên khác ở chữ số cuối, do RandomForestClassifier(n_jobs=-1) cộng xác suất
+  của các cây theo thứ tự luồng.
+- Một ô duy nhất của thí nghiệm cỡ tập hiệu chỉnh (RF, 5 %, n = 250) lệch 1,0e-5 về lợi ích ròng: khác
+  biệt ở chữ số cuối làm một điểm cắt trùng điểm số "lật" một trẻ.
+- Mẫu hình có ý nghĩa sau Benjamini–Hochberg của cả 384 phép kiểm trùng khít.
+Kết luận: tái lập tới sai số làm tròn, không trùng từng bit. Muốn trùng từng bit: đặt n_jobs=1 cho rừng ngẫu nhiên.

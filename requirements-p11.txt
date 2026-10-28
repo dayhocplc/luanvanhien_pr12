@@ -1,0 +1,7 @@
+# Python 3.12.10, CPU. Phiên bản dùng cho kết quả đã công bố (27/09/2026).
+numpy==2.5.2
+scipy==1.18.1
+scikit-learn==1.9.0
+matplotlib==3.11.1
+# chỉ cần khi dựng lại bản thảo .docx (cùng pandoc >= 3; đã dùng pandoc 3.9):
+python-docx==1.2.0

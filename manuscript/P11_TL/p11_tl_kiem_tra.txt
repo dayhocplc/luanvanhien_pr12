@@ -1,0 +1,87 @@
+ĐẠT  20 lần lặp ở p11_tl.json và p11_tasks.json; không phải bản chạy nhanh
+ĐẠT  quần thể 50 000 trẻ, đúng 1 000 trẻ mắc (2 %)
+ĐẠT  tập huấn luyện 5 000 hồ sơ, 2 %
+ĐẠT  kho hồ sơ trùng kho của lưới chính (kích thước)
+ĐẠT  mẫu kiểm tra rút từ phần còn lại, rời quần thể đánh giá
+ĐẠT  108 phép kiểm trong họ BH của bài
+ĐẠT  đúng 6 phép kiểm tầm thường (N0 + hiệu chỉnh tiên nghiệm), hiệu số 0
+ĐẠT  'chuyển tất cả' ở p_t = 2 % có NB đúng bằng 0
+ĐẠT  SMOTE k = 5 và RF 200 cây / 5 hồ sơ mỗi lá trong run_imbalance
+ĐẠT  Brier xấu hơn có ý nghĩa ở 64/64 ô
+ĐẠT  PR-AUC tăng có ý nghĩa chỉ ở FKNN hoặc RF+RUS
+ĐẠT  'Fuzzy k-NN gần như không phân biệt được' (AUC < 0,56 ở mọi tỷ lệ)
+ĐẠT  NB tăng: chủ yếu FKNN hoặc tỷ lệ 5 % (mọi ô tăng thuộc một trong hai)
+ĐẠT  LR và HYB sau cân bằng lại gắn cờ ≥ 99,9 % trẻ ở cả bốn tỷ lệ
+ĐẠT  dịch chuyển ngưỡng: PR-AUC và Brier trùng nguyên trạng
+ĐẠT  mốc Brier 19,6 phần nghìn = 0,02·0,98
+ĐẠT  LR và RF có AUC ≥ 0,68 (phân biệt thực) ở 2 %
+ĐẠT  LR thổi phồng > 20 lần với cả bốn cách ('hơn hai mươi lần' ở kết luận)
+ĐẠT  tóm tắt EN 'about twentyfold' (LR SMOTE 19–23 lần)
+ĐẠT  tóm tắt EN '86%' khớp
+ĐẠT  tóm tắt EN 'true rate about 2%' (dải ≥ 20 % sau SMOTE: 15–30/1 000)
+ĐẠT  sau SMOTE không trẻ nào ở dải < 1 % và 1–5 % (≤ 0,05 %)
+ĐẠT  nguyên trạng: dải trung thực (1–5 %: 10–50/1 000; 5–20 %: 50–200/1 000; < 1 %: < 10/1 000)
+ĐẠT  khớp trung bình: dải trung thực trở lại (1–5 % và 5–20 % đúng khoảng)
+ĐẠT  'phần lớn trẻ ở dải 1–5 %' khi nguyên trạng
+ĐẠT  LR nguyên trạng ở K = 5 % gấp > 4 lần ngẫu nhiên
+ĐẠT  LR: ROS/SMOTE/CW không có ý nghĩa ở cả 3 mức (9/9)
+ĐẠT  LR: RUS giảm có ý nghĩa ở cả 3 mức
+ĐẠT  RF: ROS/SMOTE/CW giảm có ý nghĩa ở mọi mức (9/9)
+ĐẠT  RF: RUS tăng có ý nghĩa ở K = 5 % và 10 %
+ĐẠT  dấu * trong Bảng 3 khớp đúng số phép kiểm có ý nghĩa
+ĐẠT  năng lực dùng thứ hạng: sửa thang không đổi thứ hạng (δ hữu hạn, mm tăng đơn điệu)
+ĐẠT  RF: SMOTE bỏ lỡ thêm trẻ mắc (độ nhạy ở K = 5 % thấp hơn)
+ĐẠT  LR sau cân bằng lại: chuyển ≥ 99,9 % ở 2 % và 5 %
+ĐẠT  LR sau cân bằng lại: NB ở 5 % = NB 'chuyển tất cả' (±0,05 phần nghìn)
+ĐẠT  'chuyển tất cả' tệ hơn không chuyển ai ở 5 %
+ĐẠT  'dài gấp khoảng hai mươi lần' năng lực 5 % (LR SMOTE chuyển ≥ 95 % ở 5 %)
+ĐẠT  RF SMOTE ở 5 %: NB âm, nguyên trạng dương
+ĐẠT  RF SMOTE thô: NB thấp hơn nguyên trạng ở cả 3 ngưỡng (có ý nghĩa)
+ĐẠT  Hình 3a: LR SMOTE thô trùng 'chuyển tất cả' tại p_t ≤ 2 % (±0,2 phần nghìn)
+ĐẠT  Hình 3a: LR SMOTE pc/mm gần đường nguyên trạng (±0,5 phần nghìn trên toàn dải)
+ĐẠT  Hình 3b: RF SMOTE pc/mm thấp hơn nguyên trạng ở p_t 2–5 %
+ĐẠT  LR: hệ số góc quanh 1 (0,85–1,25) ở mọi cách huấn luyện
+ĐẠT  dịch log-odds không đổi hệ số góc (pc/mm = raw, ±1e-6) với LR
+ĐẠT  LR: pc và mm đưa ECE ≤ 3,5 phần nghìn
+ĐẠT  LR: NB sau pc/mm chênh nguyên trạng ≤ 0,5 phần nghìn
+ĐẠT  'một vài hiệu số rất nhỏ vẫn có ý nghĩa' (có ≥ 1 và mọi cái ≤ 0,5 phần nghìn)
+ĐẠT  RF: hệ số góc sau ROS/SMOTE/CW < 0,45 và < nguyên trạng
+ĐẠT  RF nguyên trạng 'đã quá phân tán' (hệ số góc < 0,7)
+ĐẠT  RF: pc sửa quá tay (nguy cơ TB < 0,01) sau ROS/SMOTE/CW
+ĐẠT  RF: pc làm NB ở 2 % thấp hơn nguyên trạng (có ý nghĩa) sau ROS/SMOTE/CW
+ĐẠT  RF: mm đưa nguy cơ TB về 0,0200 (±0,0002)
+ĐẠT  RF: mm vẫn ECE > 10 phần nghìn và NB ở 5 % âm
+ĐẠT  RF RUS: hệ số góc ≈ 1 (0,85–1,15); pc NB 2 % cao hơn nguyên trạng có ý nghĩa
+ĐẠT  tóm tắt EN 'slope 0.3–0.4' (RF ROS/SMOTE/CW làm tròn 1 chữ số ∈ [0,3; 0,4])
+ĐẠT  tỷ lệ giả định 4 %: NB ở 5 % âm và chuyển nhiều hơn tỷ lệ đúng (LR SMOTE)
+ĐẠT  đánh giá thấp gây hại ít hơn đánh giá cao ở p_t 5 % và 10 % (LR, mọi cách cân bằng lại)
+ĐẠT  cập nhật chặn n = 100/200 kém khớp trung bình đúng (LR, mọi cách)
+ĐẠT  n = 500: cập nhật chặn tốt hơn n = 200 nhưng vẫn kém khớp trung bình (LR SMOTE)
+ĐẠT  LR: Platt kém cập nhật chặn ở mọi n (LR SMOTE)
+ĐẠT  hệ số góc Platt âm có xảy ra ở n = 100 và 200, hiếm ở n = 500
+ĐẠT  RF SMOTE: Platt n = 500 là ECE thấp nhất trong Bảng 5 nhưng NB ở 5 % < nguyên trạng
+ĐẠT  tóm tắt: ít nhãn (100–200) kém khớp trung bình cho cả LR và RF sau SMOTE
+ĐẠT  A: 5 000 điểm không nhãn, thổi phồng > 1,5, vượt năng lực
+ĐẠT  B: 1 000 hồ sơ có nhãn, NB 5 % tăng sau sửa, hệ số góc < 0,7 và có cảnh báo hình dạng
+ĐẠT  C: thổi phồng ≈ 1, 2 % trong KTC Wilson, cảnh báo DUY NHẤT là vượt năng lực ở 5 %
+ĐẠT  không còn ô {{…}} hay trích dẫn [@…] chưa điền
+ĐẠT  hình 1 tồn tại và được chèn
+ĐẠT  hình 2 tồn tại và được chèn
+ĐẠT  hình 3 tồn tại và được chèn
+ĐẠT  Bảng 1 có chú thích và được nhắc trong bài
+ĐẠT  Bảng 2 có chú thích và được nhắc trong bài
+ĐẠT  Bảng 3 có chú thích và được nhắc trong bài
+ĐẠT  Bảng 4 có chú thích và được nhắc trong bài
+ĐẠT  Bảng 5 có chú thích và được nhắc trong bài
+ĐẠT  Bảng 6 có chú thích và được nhắc trong bài
+ĐẠT  Hình 1 được nhắc trong bài
+ĐẠT  Hình 2 được nhắc trong bài
+ĐẠT  Hình 3 được nhắc trong bài
+ĐẠT  mọi tài liệu trong danh mục được trích (không thừa)
+ĐẠT  ba công thức đánh số (1)–(3)
+ĐẠT  độ dài thân bài hợp lý (9366 từ, 5 000–12 000)
+ĐẠT  khai báo dữ liệu tổng hợp ở tóm tắt và hạn chế
+ĐẠT  khai báo công bố liên quan (hai bản đi kèm + bản ngôn ngữ còn lại)
+ĐẠT  bản Việt dùng dấu phẩy thập phân trong thân bài (không có '0.0' ngoài tóm tắt tiếng Anh)
+
+ĐẠT 85/85

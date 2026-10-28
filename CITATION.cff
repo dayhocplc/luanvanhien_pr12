@@ -1,0 +1,26 @@
+# ĐIỀN tên tác giả, ORCID và DOI Zenodo (sau khi Zenodo cấp) trước khi đăng.
+cff-version: 1.2.0
+message: "Nếu dùng mã nguồn này, xin trích dẫn bài báo và bản lưu trữ này. / If you use this code, please cite the article and this archive."
+title: "Khi công cụ sàng lọc được huấn luyện trên dữ liệu cân bằng lại — mã nguồn, kết quả và công cụ kiểm tra đầu ra cho dịch vụ tâm lý (When a screening tool is trained on rebalanced data — code, results and output-audit tool)"
+version: 1.0.0
+date-released: 2026-09-27
+license: MIT
+authors:
+  - family-names: "[Tác giả 1]"
+    given-names: "[Tên]"
+    affiliation: "Trường Đại học Lạc Hồng"
+  - family-names: "[Tác giả 2]"
+    given-names: "[Tên]"
+    affiliation: "Trường Đại học Lạc Hồng"
+# doi: 10.5281/zenodo.XXXXXXX
+keywords:
+  - class imbalance
+  - SMOTE
+  - probability calibration
+  - prior correction
+  - decision curve analysis
+  - service capacity
+  - risk communication
+  - clinical psychology
+  - developmental screening
+  - synthetic data
